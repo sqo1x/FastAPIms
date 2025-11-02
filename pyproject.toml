@@ -9,7 +9,6 @@ readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
     "fastapi (>=0.120.2,<0.121.0)",
-    "pytest (>=8.4.2,<9.0.0)",
     "uvicorn[standard] (>=0.38.0,<0.39.0)",
     "pydantic[email] (>=2.12.3,<3.0.0)"
 ]
@@ -18,3 +17,9 @@ dependencies = [
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+[dependency-groups]
+dev = [
+    "black (>=25.9.0,<26.0.0)",
+    "pytest (>=8.4.2,<9.0.0)",
+]
